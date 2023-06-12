@@ -10,6 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.pradeep.virtuallabsnitk.onboarding.OnBoardingScreen
 import com.pradeep.virtuallabsnitk.ui.theme.VirtualLabsNITKTheme
 
 class MainActivity : ComponentActivity() {
@@ -17,24 +18,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             VirtualLabsNITKTheme {
-
+                OnBoardingScreen()
             }
         }
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    VirtualLabsNITKTheme {
-        Greeting("Android")
-    }
-}
