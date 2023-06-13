@@ -88,7 +88,7 @@ fun DiskTypeFlywheel() {
             modifier = Modifier
                 .fillMaxWidth()
                 .fillMaxHeight(0.5f)
-                .background(color = Color.LightGray)
+                .background(color = Color(0xFF8C9EFF))
         ) {
             Canvas(
                 modifier = Modifier
@@ -235,7 +235,7 @@ fun DiskTypeFlywheel() {
         Box(
             modifier = Modifier
                 .fillMaxSize()
-                .background(color = Color(0xFF8C9EFF))
+                .background(color = Color(0xFFCCFF90))
                 .padding(8.dp),
             contentAlignment = Alignment.TopCenter
         ) {

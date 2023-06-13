@@ -216,7 +216,7 @@ fun SampleExperiment() {
                         when (drawerItem.destination) {
                             "aim" -> AimScreen()
                             "theory" -> TheoryScreen()
-//                            "procedure" -> ProcedureScreen()
+                            "procedure" -> ProcedureScreen()
 //                            "self_evaluation" -> SelfEvaluationScreen()
                             "simulation" -> DiskTypeFlywheel()
 //                            "assignment" -> AssignmentScreen()
@@ -348,32 +348,44 @@ fun TheoryScreen() {
             text1,
 
             )
-        AsyncImage(model = R.drawable.canti1, contentDescription = null)
+        AsyncImage(model = R.drawable.canti1, contentDescription = null, modifier = Modifier
+            .fillMaxWidth()
+            .height(150.dp))
         Text(
             text2,
 
             )
-        AsyncImage(model = R.drawable.canti2, contentDescription = null)
+        AsyncImage(model = R.drawable.canti2, contentDescription = null, modifier = Modifier
+            .fillMaxWidth()
+            .height(150.dp))
         Text(
             text3,
 
             )
-        AsyncImage(model = R.drawable.canti3, contentDescription = null)
+        AsyncImage(model = R.drawable.canti3, contentDescription = null, modifier = Modifier
+            .fillMaxWidth()
+            .height(150.dp))
         Text(
             text4,
 
             )
-        AsyncImage(model = R.drawable.canti4, contentDescription = null)
+        AsyncImage(model = R.drawable.canti4, contentDescription = null, modifier = Modifier
+            .fillMaxWidth()
+            .height(150.dp))
         Text(
             text5,
 
             )
-        AsyncImage(model = R.drawable.canti5, contentDescription = null)
+        AsyncImage(model = R.drawable.canti5, contentDescription = null, modifier = Modifier
+            .fillMaxWidth()
+            .height(150.dp))
         Text(
                 text6,
 
         )
-        AsyncImage(model = R.drawable.canti6, contentDescription = null)
+        AsyncImage(model = R.drawable.canti6, contentDescription = null, modifier = Modifier
+            .fillMaxWidth()
+            .height(150.dp))
         Text(
                 text7,
 
@@ -392,31 +404,8 @@ private fun AnnotatedString.Builder.bulletPoint(text: String) {
     append(text)
 }
 
-@Composable
-fun appendImage(resourceId: Int) {
-    val image: Painter = painterResource(id = resourceId)
-    Image(
-        painter = image,
-        contentDescription = null // Provide a meaningful description if needed
-    )
-}
-
 
 @Composable
-fun DrawerItem(icon: ImageVector, text: String) {
-    Row(
-        verticalAlignment = Alignment.CenterVertically,
-        modifier = Modifier
-            .clickable { /* Handle drawer item click here */ }
-            .padding(vertical = 8.dp)
-    ) {
-        Icon(
-            icon,
-            contentDescription = null,
-            tint = Color.Black,
-            modifier = Modifier.size(24.dp)
-        )
-        Spacer(modifier = Modifier.width(16.dp))
-        Text(text, fontSize = 16.sp)
-    }
+fun ProcedureScreen() {
+    Text(text = "Yet to be Implemented. Please ignore the minor UI design issues")
 }
