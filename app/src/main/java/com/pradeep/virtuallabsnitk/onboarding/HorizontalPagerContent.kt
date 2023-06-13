@@ -18,7 +18,7 @@ fun getHorizontalPagerContent(): List<HorizontalPagerContent> {
         HorizontalPagerContent(
             title = "Virtual Lab Experiments Enhancing Learning at NITK Surathkal",
             res = R.drawable.virtual_labs,
-            backgroundColor = Color.Green.copy(alpha = 0.5f),
+            backgroundColor = Color(0xFFFFFFFF),
             desc = "An Initiative of Ministry of Education Under the National Mission on Education through ICT"
         ),
         HorizontalPagerContent(
@@ -30,7 +30,7 @@ fun getHorizontalPagerContent(): List<HorizontalPagerContent> {
         HorizontalPagerContent(
             title = "Interactive Learning Modules",
             res = R.drawable.interactive,
-            backgroundColor = Color(0xFF2196F3).copy(alpha = 0.5f),
+            backgroundColor = Color(0xFFB2FF59).copy(alpha = 0.5f),
             desc = "Dive into interactive learning modules designed to enhance your understanding of key scientific concepts. Engage in self-paced learning through videos, animations, quizzes, and informative text, all crafted by subject matter experts from NIT Surathkal."
         ),
         HorizontalPagerContent(
