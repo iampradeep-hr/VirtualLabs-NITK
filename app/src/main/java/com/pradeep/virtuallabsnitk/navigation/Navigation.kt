@@ -9,6 +9,8 @@ import androidx.navigation.compose.rememberNavController
 import com.pradeep.virtuallabsnitk.onboarding.OnBoardingScreen
 import com.pradeep.virtuallabsnitk.onboarding.SharedPref
 import com.pradeep.virtuallabsnitk.screens.HomeScreen
+import com.pradeep.virtuallabsnitk.screens.SampleExperiment
+import com.pradeep.virtuallabsnitk.screens.VibrationCardList
 
 @Composable
 fun Navigation() {
@@ -16,7 +18,7 @@ fun Navigation() {
     val navController = rememberNavController()
     NavHost(navController = navController, startDestination = NavigationScreen.OnBoardingScreen.route) {
         composable(route = NavigationScreen.HomeScreen.route) {
-            HomeScreen()
+            HomeScreen(navController)
         }
         composable(route = NavigationScreen.SplashScreen.route) {
             SplashScreen(navHostController = navController)
@@ -29,11 +31,22 @@ fun Navigation() {
                 SplashScreen(navHostController = navController)
             }
         }
+        composable(NavigationScreen.MachineDynamics.route){
+
+            VibrationCardList(navController)
+        }
+        composable(NavigationScreen.SampleExperimentScreen.route){
+            SampleExperiment()
+        }
+
     }
 }
 
 sealed class NavigationScreen(val route: String) {
-    object HomeScreen : NavigationScreen("homescreen")
-    object SplashScreen : NavigationScreen("splashscreen")
-    object OnBoardingScreen : NavigationScreen("onboardingscreen")
+    object HomeScreen : NavigationScreen("home_screen")
+    object SplashScreen : NavigationScreen("splash_screen")
+    object OnBoardingScreen : NavigationScreen("onboarding_screen")
+    object MachineDynamics:NavigationScreen("machine_dynamics_screen")
+    object SampleExperimentScreen:NavigationScreen("sample_experiment_screen")
+
 }

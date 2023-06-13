@@ -43,7 +43,7 @@ fun OnBoardingScreen(
     val list = getHorizontalPagerContent()
     systemUi.setStatusBarColor(color = list[pagerState.currentPage].backgroundColor)
 
-    SharedPref(LocalContext.current)
+   val mySharedPref= SharedPref(LocalContext.current)
 
     val isNextVisible = remember { derivedStateOf { pagerState.currentPage != list.size - 1 } }
     val isPrevVisible = remember { derivedStateOf { pagerState.currentPage != 0 } }
@@ -140,6 +140,7 @@ fun OnBoardingScreen(
                 ElevatedButton(
                     modifier = Modifier.fillMaxWidth(0.85f),
                     onClick = {
+//                        mySharedPref.setFirstTimeUserToFalse()
                         navHostController.navigate(NavigationScreen.SplashScreen.route)
                     }) {
                     Text(

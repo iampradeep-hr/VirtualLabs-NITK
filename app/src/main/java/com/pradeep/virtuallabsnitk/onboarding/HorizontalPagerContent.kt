@@ -24,7 +24,7 @@ fun getHorizontalPagerContent(): List<HorizontalPagerContent> {
         HorizontalPagerContent(
             title = "Comprehensive Lab Simulations",
             res = R.drawable.lab_simulation,
-            backgroundColor = Color(0xFFFF9800).copy(alpha = 0.5f),
+            backgroundColor = Color(0xFFB2FF59).copy(alpha = 0.5f),
             desc = "Access a wide range of virtual lab simulations that accurately replicate the real-life laboratory environment. Conduct experiments, manipulate variables, and observe results, all within the app. No more limitations due to time, equipment availability, or safety concerns."
         ),
         HorizontalPagerContent(
@@ -36,19 +36,19 @@ fun getHorizontalPagerContent(): List<HorizontalPagerContent> {
         HorizontalPagerContent(
             title = "Experiment Customization",
             res = R.drawable.customization,
-            backgroundColor = Color(0xFF673AB7).copy(alpha = 0.5f),
-            desc="Tailor your virtual lab experiments to meet specific requirements or explore variations of experiments. Modify variables, adjust parameters, and observe the impact of your changes in real-time. This empowers you to develop a deeper understanding of scientific principles and experimental design."
+            backgroundColor = Color(0xFFB2FF59).copy(alpha = 0.5f),
+            desc = "Tailor your virtual lab experiments to meet specific requirements or explore variations of experiments. Modify variables, adjust parameters, and observe the impact of your changes in real-time. This empowers you to develop a deeper understanding of scientific principles and experimental design."
         ),
         HorizontalPagerContent(
             title = "24/7 Access",
             res = R.drawable.anytime,
-            backgroundColor = Color(0xFF82B1FF),
+            backgroundColor = Color(0xFFB2FF59).copy(alpha = 0.5f),
             desc = "Enjoy the flexibility of accessing the Virtual Lab Experiments app anytime, anywhere, at your convenience. Whether you're studying in the library, relaxing in your hostel, or commuting, you can engage in immersive laboratory experiences whenever suits you best."
         ),
         HorizontalPagerContent(
             title = "Welcome",
             res = R.drawable.nitk_logo,
-            backgroundColor = Color(0xFF69F0AE),
+            backgroundColor = Color(0xFFB2FF59).copy(alpha = 0.5f),
             desc = "Take your laboratory learning to the next level with the Virtual Lab Experiments app tailored specifically for NIT Surathkal students. Embrace the power of technology and embark on a journey of discovery and scientific exploration like never before. Download the app now and unlock a world of limitless possibilities!"
         ),
 

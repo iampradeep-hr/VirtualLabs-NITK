@@ -37,7 +37,7 @@ val Typography = Typography(
     ),
     bodySmall = TextStyle(
         fontFamily = lexend,
-        fontWeight = FontWeight.Normal,
+        fontWeight = FontWeight.Medium,
         fontSize = 8.sp,
         lineHeight = 24.sp,
         letterSpacing = 0.5.sp
@@ -58,10 +58,11 @@ val Typography = Typography(
     ),
     headlineSmall =TextStyle(
         fontFamily = lexend,
-        fontWeight = FontWeight.Normal,
+        fontWeight = FontWeight.Medium,
         fontSize = 8.sp,
         lineHeight = 24.sp,
         letterSpacing = 0.5.sp
     ),
+
 
 )

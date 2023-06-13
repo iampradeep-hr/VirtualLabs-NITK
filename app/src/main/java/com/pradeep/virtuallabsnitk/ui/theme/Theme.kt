@@ -91,11 +91,11 @@ fun VirtualLabsNITKTheme(
     val colorScheme = when {
         dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
             val context = LocalContext.current
-            if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
+            if (darkTheme) dynamicDarkColorScheme(context) else dynamicDarkColorScheme(context)
         }
 
         darkTheme -> DarkColors
-        else -> LightColors
+        else -> DarkColors
     }
     val view = LocalView.current
     if (!view.isInEditMode) {
