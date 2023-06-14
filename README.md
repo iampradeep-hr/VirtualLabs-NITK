@@ -1,5 +1,6 @@
 # VirtualLabs-NITK
-
+## Download the app here: 
+[Click here to download the app](https://www.dropbox.com/s/gbhl4ipaebcy7tj/app-debug.apk?dl=0)
 ## Screenshots
 <img src="https://github.com/iampradeep-hr/VirtualLabs-NITK/assets/81664507/402d8057-d838-4400-b42f-cb5e5307484f" width="470" height="1000">
 <img src="https://github.com/iampradeep-hr/VirtualLabs-NITK/assets/81664507/5f9f183f-540b-497c-a492-ceed4e9a6683" width="470" height="1000">
